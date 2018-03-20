@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <!-- napisy gora -->
+        <!-- koniec napisy gora -->
+        <!-- przyciski -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Press the blue circle"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="15pt" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/tvDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Click again when it turns to green"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="10pt" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/readyButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10pt"
+                android:layout_marginRight="10pt"
+                android:layout_marginTop="10pt"
+                android:background="@drawable/circle_button"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="Ready"
+                android:textAllCaps="false"
+                android:textColor="@android:color/background_light"
+                android:textSize="30sp"
+                android:typeface="normal"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/goButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10pt"
+                android:layout_marginRight="10pt"
+                android:layout_marginTop="10pt"
+                android:background="@drawable/circle_green"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="Go"
+                android:textAllCaps="false"
+                android:textColor="@android:color/background_light"
+                android:textSize="30sp"
+                android:typeface="normal"
+                android:visibility="gone" />
+        </LinearLayout>
+        <!-- koniec przyciski -->
+        <!-- statystyki -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvAvg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15pt"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:text="Average | "
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/colorPurple"
+                        android:textSize="9pt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvAvgText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15pt"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:text="0 ms"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="9pt" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvTries"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15pt"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:text="Tries | "
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/colorPurple"
+                        android:textSize="9pt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvTriesText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15pt"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:text="0 of 5 "
+                        android:textColor="@color/colorAccent"
+                        android:textSize="9pt" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- koniec statystyki -->
+    </LinearLayout>
+</RelativeLayout>
