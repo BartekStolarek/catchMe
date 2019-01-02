@@ -17,3 +17,6 @@ Application is connected with Firebase, so all scores are stored in the database
 1. Create your own, empty project in Android Studio
 2. Copy ``` app ``` folder from GitHub to your project
 3. Bind the Firebase by pasting correct ``` google-services.json ``` file inside the ``` app ``` directory. You will find more about setting up the Android Studio project with Firebase on the Google Firebase main page.
+
+### Demo
+![Alt_text](https://i.ibb.co/q9DgxVy/ezgif-com-video-to-gif.gif)
